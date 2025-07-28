@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    char Estado = 'A';
-    char Carta[50] = "B02";
-    char Cidade[50] = "Natal";
-    int Populacão = 27000;
-    float Área = 195000; 
-    float PIB = 385000;
-    int Turismo = 27;
+    char Estado = 'A , B';
+    char Carta[50] = "A01, B02";
+    char Cidade[50] = "Natal, Londrina";
+    int Populacão = 27000, 13000;
+    float Área = 1950,1500 ; 
+    float PIB = 3850000, 250000;
+    int Turismo = 27, ;
 
     
     
@@ -32,7 +32,13 @@ int main() {
     printf("Digite a quantidade de pontos turísticos:");
     scanf("%d",&Turismo);
 
-    printf("Estado:%c\nCarta:%s\nNome da Cidade:%s\nPopulacão:%d\nÁrea:%.2f km²\nPIB:%.2f bilhões de reais\nNúmero de pontos turistico:%d",Estado,Carta,Cidade,Populacão,Área,PIB,Turismo);
+    printf("Estado:%c\nCarta:%s\nNome da Cidade:%s\nPopulacão:%d\nÁrea:%.2f km²\nPIB:%.2f bilhões de reais\nNúmero de pontos turistico:%d\n",Estado,Carta,Cidade,Populacão,Área,PIB,Turismo);
+
+    float densidade = (float) Populacão / Área;
+    printf("Densidade populaional:%.2f hab/km²\n", densidade);
+
+    float capita = (float) Populacão / PIB;
+    printf("PIB per capita:%.2f reais", capita);
 
 
 

@@ -31,10 +31,17 @@ int main() {
  
     printf("Digite a quantidade de pontos turísticos:");
     scanf("%d",&Turismo);
+    
 
-    printf("Estado:%c\nCarta:%s\nNome da Cidade:%s\nPopulacão:%d\nÁrea:%.2f km²\nPIB:%.2f bilhões de reais\nNúmero de pontos turistico:%d",Estado,Carta,Cidade,Populacão,Área,PIB,Turismo);
+    printf("Estado:%c\nCarta:%s\nNome da Cidade:%s\nPopulacão:%d\nÁrea:%.2f km²\nPIB:%.2f bilhões de reais\nNúmero de pontos turistico:%d\n",Estado,Carta,Cidade,Populacão,Área,PIB,Turismo);
+
+     float densidade = (float) Populacão / Área;
+    printf("Densidade populaional:%.2f hab/km²\n", densidade);
+
+    float capita = (float) Populacão / PIB;
+    printf("PIB per capita:%.2f reais", capita);
 
 
 
-
+    
 }
